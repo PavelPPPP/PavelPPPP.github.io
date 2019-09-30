@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+
+.d__test {
+    text-align: center;
+}
+
+/*====== container__test =========*/
+.container__test {
+    position: relative;
+    display: inline-block;
+    margin: 55px;
+    font-size: 0;
+}
+/*======= end container__test =======*/
+
+/* ====== btn__test ======= */
+.container__test .btn__test {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: background 1s, top 0.4s, left 0.4s;
+    -o-transition: background 1s, top 0.4s, left 0.4s;
+    transition: background 1s, top 0.4s, left 0.4s;
+}
+
+.container__test .btn__test:hover {
+    cursor: pointer;
+}
+
+.container__test .btn__add {
+    background: url(plus.png) 50% 50% no-repeat #f3a500;  
+}
+
+.container__test .btn__add:hover {
+    background: url(plus.png) 50% 50% no-repeat rgba(243, 165, 0, 0.5);
+}
+
+.container__test .btn__del {
+    display: none;
+    background: url(minus.png) 50% 50% no-repeat #b20000; 
+}
+
+.container__test .btn__del:hover {
+    background: url(minus.png) 50% 50% no-repeat rgba(178, 0, 0, 0.5);
+}
+/* ====== end btn__test === */
+
+
+/* ======== table__test =========== */
+.container__test .table__test {
+    display: inline-block;
+    margin: 2px;
+    padding: 1px;
+    border: 1px solid #48aae6;
+}
+/* ======== end table__test ======= */
+
+/* ======== rows ========= */
+.container__test .rows:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ======== end rows ===== */
+
+
+/* ======== cols ========= */
+.container__test .cols {
+    margin: 1px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 204, 255);
+}
+/* ======== end cols ===== */
