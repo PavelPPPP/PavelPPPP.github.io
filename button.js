@@ -8,7 +8,7 @@ class Button {
         this.left = left;
     }
 
-    view(elem) {
+    viewBtn(elem) {
         throw new Error("not view with Parent class");
     }
 }
