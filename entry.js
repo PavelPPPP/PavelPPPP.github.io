@@ -1,3 +1,6 @@
+import App from '/app.js';
+import { TestButton } from '/button.js';
+
 let containerTest = document.querySelector(".container__test");
 let tableTest = document.querySelector("#tableTestJS");
 let btnsAdd = document.querySelectorAll(".btn__add");
