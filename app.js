@@ -1,4 +1,4 @@
-class App {
+export default class App {
     calcCoordsForBtn(elemTable, elemCol) {
         return {
             tableCoords: {

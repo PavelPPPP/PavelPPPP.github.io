@@ -1,4 +1,4 @@
-class Button {
+export class Button {
     constructor(top, left) {
         this.setPosition(top, left);
     }
@@ -13,7 +13,7 @@ class Button {
     }
 }
 
-class TestButton extends Button {
+export class TestButton extends Button {
     viewBtn(elem) {
         elem.style.display = "block";
         
