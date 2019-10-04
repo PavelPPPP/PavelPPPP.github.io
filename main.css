@@ -42,6 +42,7 @@ html, body {
 }
 
 .container__test .btn__add {
+    display: none;
     background: url(plus.png) 50% 50% no-repeat #f3a500;  
 }
 

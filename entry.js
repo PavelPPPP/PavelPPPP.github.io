@@ -18,11 +18,13 @@ for (let el of btnsAdd) {
     if (el.dataset.btn === "addRow") {
         el.style.top = "100%";
         el.style.left = col.offsetLeft + "px";
+        el.style.display = "block";
         objCoords.elem2 = getCoords(el);
     }
     if (el.dataset.btn === "addCol") {
         el.style.left = "100%";
         el.style.top = col.offsetTop + "px";
+        el.style.display = "block";
         objCoords.elem3 = getCoords(el);
     }
 }
