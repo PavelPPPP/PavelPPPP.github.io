@@ -19,13 +19,15 @@ for (let el of btnsAdd) {
         el.style.top = "100%";
         el.style.left = col.offsetLeft + "px";
         el.style.display = "block";
-        objCoords.elem2 = getCoords(el);
+        // objCoords.elem2 = getCoords(el);
+        objCoords[el.dataset.btn] = getCoords(el);
     }
     if (el.dataset.btn === "addCol") {
         el.style.left = "100%";
         el.style.top = col.offsetTop + "px";
         el.style.display = "block";
-        objCoords.elem3 = getCoords(el);
+        // objCoords.elem3 = getCoords(el);
+        objCoords[el.dataset.btn] = getCoords(el);
     }
 }
 
@@ -34,7 +36,8 @@ document.addEventListener('mousemove', (e) => {
     let rows = document.querySelectorAll(".rows");
     let elem = e.target;
 
-    objCoords.elem1 = getCoords(containerTest);
+    //objCoords.elem1 = getCoords(containerTest);
+    objCoords[containerTest.className] = getCoords(containerTest);
     if (elem.className === "cols") {
         let calc = app.calcCoordsForBtn(tableTest, elem);
         let setCoords = app.setCoordsForBtn(calc);
@@ -45,15 +48,16 @@ document.addEventListener('mousemove', (e) => {
                 if (rows.length > 1) {
                     setBtn = setButton(setCoords.delRow.top + 'px', 0 - sizeObj.width + 'px');
                     app.view(setBtn.viewBtn(el));
-                    objCoords.elem4 = getCoords(el);
+                    // objCoords.elem4 = getCoords(el);
+                    objCoords[el.dataset.btn] = getCoords(el);
                 }
             }
             if (el.dataset.btn === "delCol") {
                 if (rows[0].children.length > 1) {
                     setBtn = setButton(0 - sizeObj.height + 'px', setCoords.delCol.left + 'px');
-                    
                     app.view(setBtn.viewBtn(el));
-                    objCoords.elem5 = getCoords(el);
+                    // objCoords.elem5 = getCoords(el);
+                    objCoords[el.dataset.btn] = getCoords(el);
                 }
             }
         }
